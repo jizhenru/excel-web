@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+input, button {
+	margin: 10px 0;
+	display: block;
+}
+</style>
+</head>
+<body>
+	<form method="post" name="form" id="form" action="/Excel">
+		学生数：<input type="text" name="num" id="num">
+		出勤日期所在列：<input type="text" name="cell" id="cell">
+		统计表名：<input type="text" name="str2" id="str2">
+		统计表页：<input type="text" name="sheet" id="sheet">
+		出勤表名：<input type="text" name="str1" id="str1">
+		<button type="submit">提交</button>
+	</form>
+</body>
+<script type="text/javascript">
+	// with() 指定作用域函数。在用于表单时，直接输入表单中的name值，就可以获取该元素的dom    function validate_required(fieled){    with(fieled){    if(value == null || value == ""){    // 可以做一些提示操作    alert("用户的账号、密码不可为空");    return false;    }else{    return true;    }    }    }function validate_form(form){with(form){if(validate_required(name) == false){name.focus();return false;}if(validate_required(passwd) == false){passwd.focus();return false;}alert("返回true,可以提交表单");return true; // 可以省略}}
+</script>
+</html>
